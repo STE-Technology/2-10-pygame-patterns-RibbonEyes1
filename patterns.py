@@ -20,7 +20,8 @@ pygame.display.set_caption("Pygame Patterns")
 # Define colours
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-
+GREEN=(27, 135, 85)
+PURPLE=(116, 93, 156)
 # Main loop
 running = True
 
@@ -33,8 +34,24 @@ while running:
     # Draw graphics
     # --(start here)---------------------------------------------------------
     screen.fill(WHITE)
+    pygame.draw.circle(screen,GREEN,(730,90),20)
+    pygame.draw.circle(screen,GREEN,(650,90),20)
+    pygame.draw.circle(screen,GREEN,(570,90),20)
+    pygame.draw.circle(screen,GREEN,(490,90),20)
+    pygame.draw.circle(screen,GREEN,(730,170),20)
+    pygame.draw.circle(screen,GREEN,(650,170),20)
+    pygame.draw.circle(screen,GREEN,(570,170),20)
+    pygame.draw.circle(screen,GREEN,(490,170),20)
+    pygame.draw.circle(screen,GREEN,(730,250),20)
+    pygame.draw.circle(screen,GREEN,(650,250),20)
+    pygame.draw.circle(screen,GREEN,(570,250),20)
+    pygame.draw.circle(screen,GREEN,(490,250),20)
+    pygame.draw.circle(screen,GREEN,(730,330),20)
+    pygame.draw.circle(screen,GREEN,(650,330),20)
+    pygame.draw.circle(screen,GREEN,(570,330),20)
+    pygame.draw.circle(screen,GREEN,(490,330),20)
 
-
+    pygame.draw.line(screen,PURPLE,)
 
 
     # --(leave below)--------------------------------------------------------
