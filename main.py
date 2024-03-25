@@ -2,7 +2,7 @@
 File: patterns.py
 Author: Your Name
 Date: 2024-03-21
-Description: Template for basic Pygame graphics setup. Test push from Replit.
+Description: Template for basic Pygame graphics setup.
 """
 
 import pygame
