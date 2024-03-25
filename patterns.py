@@ -48,9 +48,17 @@ while running:
     for horizon in range(10,401,40):
         pygame.draw.line(screen,PURPLE,(horizon,375),(horizon,5),width=2)
 
-  
-    pygame.draw.line(screen,(255,0,4),(10,400),(450,140),width=40) 
+    #NOT WORKING
+    for line in range(10,401,30):
+         red=255
+         pygame.draw.line(screen,(red,0,4),(line,400),(line,800),width=30) 
+         red=red-30
 
+    colour=random.randint(0, 255),random.randint(0, 255), random.randint(0, 255)
+    for x in range(400,800,1):
+        pygame.draw.rect(screen, colour, (400, 400, 5, 5))
+
+    
     # --(leave below)--------------------------------------------------------
 
     # Update display
