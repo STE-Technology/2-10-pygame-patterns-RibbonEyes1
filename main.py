@@ -27,42 +27,38 @@ PURPLE = (116, 93, 156)
 running = True
 
 while running:
-  # Handle events
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
+    # Handle events
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
 
-  # Draw graphics
-  # --(start here)---------------------------------------------------------
-  screen.fill(WHITE)
+    # Draw graphics
+    # --(start here)---------------------------------------------------------
+    screen.fill(WHITE)
 
-  for circle in range(490, 801, 80):
-    pygame.draw.circle(screen, GREEN, (circle, 80), 20)
-    pygame.draw.circle(screen, GREEN, (circle, 170), 20)
-    pygame.draw.circle(screen, GREEN, (circle, 260), 20)
-    pygame.draw.circle(screen, GREEN, (circle, 350), 20)
+    for circle in range(490, 801, 80):
+        pygame.draw.circle(screen, GREEN, (circle, 80), 20)
+        pygame.draw.circle(screen, GREEN, (circle, 170), 20)
+        pygame.draw.circle(screen, GREEN, (circle, 260), 20)
+        pygame.draw.circle(screen, GREEN, (circle, 350), 20)
 
-  for vertical in range(10, 401, 40):
-    pygame.draw.line(screen, PURPLE, (400, vertical), (10, vertical), width=2)
+    for vertical in range(10, 401, 40):
+        pygame.draw.line(screen, PURPLE, (400, vertical), (10, vertical), width=2)
 
-  for horizon in range(10, 401, 40):
-    pygame.draw.line(screen, PURPLE, (horizon, 375), (horizon, 5), width=2)
+    for horizon in range(10, 401, 40):
+        pygame.draw.line(screen, PURPLE, (horizon, 375), (horizon, 5), width=2)
 
-  #NOT WORKING
-  for line in range(10, 401, 30):
-    red = 255
-    pygame.draw.line(screen, (red, 0, 4), (line, 400), (line, 800), width=30)
-    red = red - 30
+    """I ended up giving up, as it kept disconnecting, and I ultmaitly coud not figure out what to do also, theres a syntax error somewhere in this line, but its not showing, and my screen is formatted weirdlty in replit.I decided to use my old code as a result
+    """
+    for line in range(10, 401, 30):
+        red = 255
+        pygame.draw.line(screen, (red, 0, 4), (line, 400), (line, 800), width=30)
+        red = red - 30
 
-  colour = random.randint(0, 255), random.randint(0,
-                                                  255), random.randint(0, 255)
-  for x in range(400, 800, 1):
-    pygame.draw.rect(screen, colour, (400, 400, 5, 5))
+    # --(leave below)--------------------------------------------------------
 
-  # --(leave below)--------------------------------------------------------
-
-  # Update display
-  pygame.display.flip()
+    # Update 
+    pygame.display.flip()
 
 # Quit Pygame
 pygame.quit()
