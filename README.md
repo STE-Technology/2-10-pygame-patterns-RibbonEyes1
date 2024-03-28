@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/R85pIx03)
 # Pygame Patterns
 Apply your knowledge of `for` and `while` loops to draw patterns and sequences of objects. Create a single Python program, `patterns.py`, using the Pygame library to draw this window:
 
